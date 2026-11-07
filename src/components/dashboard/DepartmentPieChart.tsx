@@ -82,7 +82,7 @@ export default function DepartmentPieChart({
             <button
               type="button"
               onClick={() => setActiveTab("departments")}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                 activeTab === "departments"
                   ? "bg-white text-slate-900 font-semibold shadow-xs"
                   : "hover:text-slate-900"
@@ -93,7 +93,7 @@ export default function DepartmentPieChart({
             <button
               type="button"
               onClick={() => setActiveTab("status")}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                 activeTab === "status"
                   ? "bg-white text-slate-900 font-semibold shadow-xs"
                   : "hover:text-slate-900"

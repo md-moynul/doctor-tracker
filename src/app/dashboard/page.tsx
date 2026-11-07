@@ -76,7 +76,7 @@ export default function DashboardPage() {
             type="button"
             onClick={() => loadAnalytics(true)}
             disabled={refreshing || loading}
-            className="inline-flex items-center gap-2 px-3.5 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 shadow-xs transition-colors disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-3.5 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 shadow-xs transition-colors disabled:opacity-50 cursor-pointer"
             title="Refresh dashboard data"
           >
             <svg
@@ -97,16 +97,16 @@ export default function DashboardPage() {
 
           <Link
             href="/doctors"
-            className="inline-flex items-center px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 shadow-xs transition-colors"
+            className="inline-flex items-center px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 shadow-xs transition-colors cursor-pointer"
           >
             Doctor Directory
           </Link>
 
           <Link
             href="/patients"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium shadow-xs shadow-blue-600/30 transition-all active:scale-95"
+            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium shadow-xs shadow-blue-600/30 transition-all active:scale-95 cursor-pointer"
           >
-            + Register Patient
+            Patients
           </Link>
         </div>
       </div>
@@ -123,7 +123,7 @@ export default function DashboardPage() {
           <button
             type="button"
             onClick={() => loadAnalytics(false)}
-            className="text-xs font-semibold underline text-rose-700 hover:text-rose-900"
+            className="text-xs font-semibold underline text-rose-700 hover:text-rose-900 cursor-pointer"
           >
             Try Again
           </button>

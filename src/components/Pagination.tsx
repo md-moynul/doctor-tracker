@@ -93,7 +93,7 @@ export default function Pagination({
           type="button"
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage <= 1 || isLoading}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed font-medium"
+          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer font-medium"
         >
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -119,7 +119,7 @@ export default function Pagination({
                 type="button"
                 onClick={() => onPageChange(Number(page))}
                 disabled={isLoading || isCurrent}
-                className={`min-w-8 h-8 px-2 rounded-lg font-semibold transition-all ${isCurrent
+                className={`min-w-8 h-8 px-2 rounded-lg font-semibold transition-all cursor-pointer ${isCurrent
                     ? "bg-blue-600 text-white shadow-xs shadow-blue-500/30"
                     : "border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                   } disabled:cursor-default`}
@@ -140,7 +140,7 @@ export default function Pagination({
           type="button"
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage >= totalPages || isLoading}
-          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed font-medium"
+          className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer font-medium"
         >
           <span>Next</span>
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

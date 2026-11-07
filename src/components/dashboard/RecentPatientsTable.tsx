@@ -54,7 +54,7 @@ export default function RecentPatientsTable({
                 key={tab}
                 type="button"
                 onClick={() => setFilterStatus(tab)}
-                className={`px-2.5 py-1 rounded-md capitalize transition-colors ${
+                className={`px-2.5 py-1 rounded-md capitalize transition-colors cursor-pointer ${
                   filterStatus === tab
                     ? "bg-white text-slate-900 font-semibold shadow-xs"
                     : "hover:text-slate-900"

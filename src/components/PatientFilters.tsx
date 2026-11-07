@@ -84,7 +84,7 @@ export default function PatientFilters({
                 key={tab}
                 type="button"
                 onClick={() => onStatusChange(tab)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all inline-flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all inline-flex items-center gap-1.5 cursor-pointer ${
                   isSelected
                     ? "bg-blue-600 text-white shadow-xs shadow-blue-500/30"
                     : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
@@ -112,7 +112,7 @@ export default function PatientFilters({
             <button
               type="button"
               onClick={onResetAll}
-              className="inline-flex items-center gap-1 text-xs font-semibold text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 px-2.5 py-1 rounded-lg transition-colors"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 px-2.5 py-1 rounded-lg transition-colors cursor-pointer"
             >
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -233,7 +233,7 @@ export default function PatientFilters({
           <button
             type="button"
             onClick={onResetAll}
-            className="h-8 px-2.5 text-xs font-medium text-slate-400 hover:text-rose-600 transition-colors ml-auto"
+            className="h-8 px-2.5 text-xs font-medium text-slate-400 hover:text-rose-600 transition-colors ml-auto cursor-pointer"
             title="Clear all filters"
           >
             Clear
@@ -270,7 +270,7 @@ export default function PatientFilters({
                 onStartDateChange("");
                 onEndDateChange("");
               }}
-              className="text-xs text-rose-600 hover:underline ml-2"
+              className="text-xs text-rose-600 hover:underline ml-2 cursor-pointer"
             >
               Reset dates
             </button>

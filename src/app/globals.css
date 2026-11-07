@@ -1,2 +1,22 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
+
+/* Action buttons and interactive elements cursor pointer */
+button,
+[role="button"],
+[type="button"],
+[type="submit"],
+[type="reset"],
+a,
+select,
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+[role="button"]:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+[type="reset"]:disabled {
+  cursor: not-allowed;
+}

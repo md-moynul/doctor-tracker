@@ -82,7 +82,7 @@ export default function PatientsPerDoctorChart({
                 <button
                   type="button"
                   onClick={() => setViewLimit(5)}
-                  className={`px-2.5 py-1 rounded-md transition-colors ${
+                  className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                     viewLimit === 5 ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
                   }`}
                 >
@@ -91,7 +91,7 @@ export default function PatientsPerDoctorChart({
                 <button
                   type="button"
                   onClick={() => setViewLimit(8)}
-                  className={`px-2.5 py-1 rounded-md transition-colors ${
+                  className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                     viewLimit === 8 ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
                   }`}
                 >
@@ -101,7 +101,7 @@ export default function PatientsPerDoctorChart({
                   <button
                     type="button"
                     onClick={() => setViewLimit(data.length)}
-                    className={`px-2.5 py-1 rounded-md transition-colors ${
+                    className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                       viewLimit === data.length ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
                     }`}
                   >

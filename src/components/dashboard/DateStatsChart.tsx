@@ -182,7 +182,7 @@ export default function DateStatsChart({ data, loading }: DateStatsChartProps) {
             <button
               type="button"
               onClick={() => setRangeFilter("7d")}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                 rangeFilter === "7d" ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
               }`}
             >
@@ -191,7 +191,7 @@ export default function DateStatsChart({ data, loading }: DateStatsChartProps) {
             <button
               type="button"
               onClick={() => setRangeFilter("14d")}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                 rangeFilter === "14d" ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
               }`}
             >
@@ -200,7 +200,7 @@ export default function DateStatsChart({ data, loading }: DateStatsChartProps) {
             <button
               type="button"
               onClick={() => setRangeFilter("all")}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
                 rangeFilter === "all" ? "bg-white text-slate-900 font-semibold shadow-xs" : "hover:text-slate-900"
               }`}
             >

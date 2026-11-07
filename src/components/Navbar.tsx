@@ -152,7 +152,7 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={() => setIsProfileOpen(!isProfileOpen)}
-                  className="flex items-center gap-2.5 p-1 rounded-full hover:ring-2 hover:ring-blue-500/20 transition-all focus:outline-none"
+                  className="flex items-center gap-2.5 p-1 rounded-full hover:ring-2 hover:ring-blue-500/20 transition-all focus:outline-none cursor-pointer"
                   aria-expanded={isProfileOpen}
                 >
                   {/* User Avatar */}
@@ -240,7 +240,7 @@ export default function Navbar() {
                       <button
                         type="button"
                         onClick={handleSignOut}
-                        className="w-full flex items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
+                        className="w-full flex items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors cursor-pointer"
                       >
                         <svg
                           className="w-4 h-4 mr-2.5 text-red-500"
@@ -300,7 +300,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+              className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none cursor-pointer"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
