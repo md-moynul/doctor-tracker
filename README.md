@@ -143,20 +143,46 @@ flowchart TD
 
 ---
 
-## 📸 Visual Evidence
+## 📸 Visual Evidence (Desktop & Mobile Views)
 
-### Desktop Dashboard View
-Real-time hospital operations showing metric cards, workload per doctor, admission trends, specialty distribution, and active clinical rosters:
+### 1. Hospital Operations Dashboard
+Real-time hospital operations with live stat cards, workload per doctor, admission timelines, and clinical resource balance:
 
-![DoctorTracker Dashboard Desktop](public/screenshots/dashboard-desktop.jpg)
+| Desktop View | Mobile View |
+| :---: | :---: |
+| ![Dashboard Desktop](public/screenshots/dashboard-desktop.png) | <img src="public/screenshots/dashboard-mobile.png" width="300" alt="Dashboard Mobile" /> |
 
-### Key Features Demonstrated:
-* **Metric Stat Cards**: Live counts of Total Doctors, Total Patients, Admitted Inpatients, and Outpatients.
-* **Patients Per Doctor (Bar Chart)**: Visual workload distribution with quick toggles (Top 5, Top 8, All).
-* **Date-Based Statistics (Area Chart)**: Smooth multi-series timeline for Total Visits, Inpatient Admissions, and Outpatient Visits across 7-day, 14-day, and 30-day windows.
-* **Department Breakdown (Donut Chart)**: Dynamic clinical case classification by medical specialty.
+* **Live Stat Cards**: Real-time totals for Doctors, Patients, Inpatients, and Outpatients.
+* **Patients Per Doctor (Bar Chart)**: Workload distribution with Top 5, Top 8, and All view toggles.
+* **Date-Based Statistics (Area Chart)**: 7-day, 14-day, and 30-day dynamic timelines of admissions.
+* **Department Breakdown (Donut Chart)**: Live specialty and admission status classification.
 * **Clinical Resource Balance**: Aggregated operational overview and patient-to-physician ratios.
-* **Live Roster & Patient Tables**: Real-time consultation queue with interactive status filters.
+
+---
+
+### 2. Doctors Directory & Workload
+Physician management with server-side specialty and hospital filtering, search, and patient roster inspection:
+
+| Desktop View | Mobile View |
+| :---: | :---: |
+| ![Doctors Desktop](public/screenshots/doctors-desktop.png) | <img src="public/screenshots/doctors-mobile.png" width="300" alt="Doctors Mobile" /> |
+
+* **Multi-Filter Bar**: Filter by Medical Specialty, Hospital Network, Date presets, or custom date ranges.
+* **Doctor Profile Cards**: Shows physician contact details, department, hospital, and active assigned patients.
+* **Doctor Patients Modal**: One-click popup inspecting all admitted and outpatient cases under any doctor.
+
+---
+
+### 3. Patient Management & Consultations
+Comprehensive patient records with multi-criteria server-side filtering (condition, status, department, blood group, gender, doctor, dates) and pagination:
+
+| Desktop View | Mobile View |
+| :---: | :---: |
+| ![Patients Desktop](public/screenshots/patients-desktop.png) | <img src="public/screenshots/patients-mobile.png" width="300" alt="Patients Mobile" /> |
+
+* **Comprehensive Filter Controls**: Instant filtering by Status (Admitted/Outpatient/Discharged), Clinical Condition, Gender, Blood Group, Department, and Date.
+* **Live Patient Table**: Complete patient vitals, diagnosis, assigned physician, and editable records.
+* **Server-Side Pagination**: Scalable navigation handling thousands of patient profiles without performance loss.
 
 ---
 
